@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+        <title>Register an Employee Form
+        </title>
+</head>
+<body>
+    <h1>Employee Registration Form</h1>
+    <form action="thankyou.html"></form>
+    <lable for="fullName">Full Nmae:</lable><br/>
+    <input type="text" name="fullName" id="fullName"placeholder="Enter your full name"autofocus required/>*<br/>
+    <lable for="email">E-mail:</lable><br/>
+    <input type="email"name="email" id="email" placeholder="Enter a valid e-mail" required />*<br/>
+    <lable for="dateofBirth">Date of Birth:</lable><br/>
+    <input type="date" name="dateOfBirth" id="dateOfBirth" required/>*<br/>
+    <lable for="age">Age:</lable><br/>
+    <input type="number" name="age" id="age" size="6" min="18 max="120 step="1 value="21 /><br/>
+    <label for="rating">Years of Experience:</label><br/> 
+    <input type="range" name="rating" id="rating" min="0" max="100" step="1" value="0" /><br/>
+    <label for="phone">Phone:</label><br/> 
+    <input type="text" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}- [0-9]{4}" placeholder="XXX-XXX-XXXX" required />*<br/>
+    <input type="submit" value="Register" /> 
+    <p>Fields marked * are required.</p>
+    <input type="range" name="rating" id="rating" min="0" max="100" step="1" value="0" /> 
+    <span id="ratingValue">0</span><br/>
+    <input type="range" name="rating" id="rating" min="0" max="100" step="1" value="0" onchange="displayRating(this);" />
+    <script> 
+    </script>
+    
+    <style type="text/css"> 
+        :required, :invalid { background-color: pink; } 
+        :valid { background-color: white; } 
+        </style>
+    
+</body>
